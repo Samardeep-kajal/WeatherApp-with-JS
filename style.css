@@ -1,5 +1,77 @@
+/* Extra Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.main-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 420px;
+  height: 668px;
+  margin-left: 650px;
+  margin-top: 2px;
+  background: #efe3e3;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.33);
+  border-radius: 48px;
+}
+.temp-icon {
+  margin-top: 100px;
+  margin-left: 150px;
+  border: 2px solid blue;
+  width: 100px;
+  height: 100px;
+}
+.temp {
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  margin-left: 150px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+}
+.humidity {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uvi {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  margin-left: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+
+.windspeed {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.inputValue {
+  height: 30px;
+  width: 250px;
+  border-radius: 5%;
+}
+.Submit {
+  height: 30px;
 }
