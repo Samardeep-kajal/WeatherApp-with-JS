@@ -4,62 +4,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background: rgb(243, 231, 214);
 }
 .main-card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 420px;
-  height: 668px;
+  height: 640px;
   margin-left: 650px;
   margin-top: 2px;
-  background: #efe3e3;
+  background: #fae7e7;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.33);
   border-radius: 48px;
 }
-.temp-icon {
-  margin-top: 100px;
-  margin-left: 150px;
-  border: 2px solid blue;
-  width: 100px;
-  height: 100px;
-}
-.temp {
+.place-name {
   font-family: "Lato", sans-serif;
-  font-size: 50px;
+  font-size: 20px;
   margin-left: 150px;
+  margin-top: 20px;
+  height: 100px;
+  width: 500px;
+}
+.temp-icon {
+  margin-top: -13px;
+  margin-left: 155px;
+  border: 2px solid blue;
+  width: 110px;
+  height: 85px;
+}
+.description {
+  font-size: 30px;
+  margin-left: 154px;
   margin-top: 10px;
   height: 100px;
   width: 100px;
 }
-.humidity {
-  font-family: "Lato", sans-serif;
+.temp {
   font-size: 30px;
-  margin-left: 60px;
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 167px;
+  margin-top: -50px;
+  height: 100px;
+  width: 100px;
 }
 
-.uvi {
-  display: flex;
-  font-family: "Lato", sans-serif;
+.humidity {
+  font-size: 25px;
   margin-left: 60px;
-  margin-top: 50px;
+  margin-top: 15px;
+  display: flex;
   flex-wrap: wrap;
-  font-size: 30px;
 }
 
 .windspeed {
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
-  margin-left: 60px;
-  margin-top: 50px;
+  font-size: 25px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -587px;
+  margin-top: 484px;
 }
+.uvi {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 29px;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+
 .input {
   display: flex;
   flex-wrap: wrap;
