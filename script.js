@@ -14,6 +14,19 @@ submitButton.addEventListener("click", function () {
       "&appid={API_key}"
   )
     .then((response) => response.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      console.log(data);
+      let nameValue = data["name"];
+      let tempValue = data["main"]["temp"];
+      let descValue = data["weather"][0]["description"];
+      let humidityValue = data["main"]["humidity"];
+      let windspeedValue = data["wind"]["speed"];
+
+      main.innerHTML = nameValue;
+      temp.innerHTML = tempValue + "°C";
+      desc.innerHTML = descValue;
+      humidity.innerHTML = humidityValue;
+      windspeed.innerHTML = windspeedValue + "m/s";
+    })
     .catch(() => alert("Wrong city!"));
 });
