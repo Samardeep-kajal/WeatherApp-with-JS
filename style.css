@@ -7,7 +7,8 @@
   font-family: "Lato", sans-serif;
 }
 body {
-  background: rgb(243, 231, 214);
+  background: url(./Assets/mountains.jpg) no-repeat;
+  background-size: 220vh;
 }
 .main-card {
   display: flex;
@@ -17,7 +18,7 @@ body {
   height: 528px;
   margin-left: 565px;
   margin-top: 32px;
-  background: #fae7e7;
+  background: rgba(255, 255, 255, 0.33);
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.33);
@@ -32,12 +33,10 @@ body {
   width: 382px;
   text-align: center;
 }
-.temp-icon {
-  margin-top: 5px;
-  margin-left: 155px;
-  border: 2px solid black;
-  width: 110px;
-  height: 85px;
+.country-name {
+  height: 57px;
+  text-align: center;
+  font-size: 34px;
 }
 .description {
   text-align: center;
@@ -70,7 +69,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -373px;
-  margin-top: 400px;
+  margin-top: 370px;
 }
 
 .input {

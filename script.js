@@ -6,7 +6,7 @@ var temp = document.querySelector(".temp");
 var humidity = document.querySelector(".hum-res");
 var uvi = document.querySelector(".uvi-res");
 var windspeed = document.querySelector(".windspeed-res");
-
+let countryName = document.querySelector(".country-name");
 submitButton.addEventListener("click", function () {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -21,12 +21,14 @@ submitButton.addEventListener("click", function () {
       let descValue = data["weather"][0]["description"];
       let humidityValue = data["main"]["humidity"];
       let windspeedValue = data["wind"]["speed"];
+      let countryValue = data["sys"]["country"];
 
       main.innerHTML = nameValue;
       temp.innerHTML = tempValue + "°C";
       desc.innerHTML = descValue;
-      humidity.innerHTML = humidityValue;
-      windspeed.innerHTML = windspeedValue + "m/s";
+      humidity.innerHTML = "Humidity : " + humidityValue + " %";
+      windspeed.innerHTML = "Wind Speed : " + windspeedValue + "m/s";
+      countryName.innerHTML = countryValue;
     })
     .catch(() => alert("Wrong city!"));
 });
